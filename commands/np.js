@@ -20,7 +20,7 @@ async function nowPlaying(client, interaction) {
 
         if (!player) {
             const errorEmbed = new EmbedBuilder()
-                .setColor('#ff0000')
+                .setColor('#812f49')
                 .setTitle('Error')
                 .setDescription('❌ There is no song currently playing.');
 
