@@ -31,7 +31,7 @@ async function play(client, interaction) {
 
         if (!interaction.member.voice.channelId) {
             const embed = new EmbedBuilder()
-                .setColor('#ff0000')
+                .setColor('#812f49')
                 .setTitle('Voice Channel Required')
                 .setDescription('❌ You need to be in a voice channel to use this command.');
 
@@ -42,7 +42,7 @@ async function play(client, interaction) {
         // Check if Lavalink nodes are available
         if (!client.riffy.nodes || client.riffy.nodes.size === 0) {
             const embed = new EmbedBuilder()
-                .setColor('#ff0000')
+                .setColor('#812f49')
                 .setTitle('No Lavalink Nodes')
                 .setDescription('❌ No available Lavalink nodes to process the request.');
 
@@ -115,7 +115,7 @@ async function play(client, interaction) {
     } catch (error) {
         console.error('Error processing play command:', error);
         const errorEmbed = new EmbedBuilder()
-            .setColor('#ff0000')
+            .setColor('#812f49')
             .setTitle('Error')
             .setDescription('❌ An error occurred while processing your request.');
 
